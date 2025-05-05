@@ -1,0 +1,9 @@
+# .gitignore for your package
+/vendor/
+.phpunit.result.cache
+.env
+.idea
+.php-cs-fixer.cache
+.phpcs-cache
+composer.lock
+*.log
