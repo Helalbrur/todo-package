@@ -13,8 +13,9 @@ class TodoServiceProvider extends ServiceProvider
 
     public function boot()
     {
-        $this->loadRoutesFrom(__DIR__.'../routes/web.php');
-        $this->loadMigrationsFrom(__DIR__.'../database/migrations');
-        $this->loadViewsFrom(__DIR__.'../resources/views', 'todo');
+       // Add DIRECTORY_SEPARATOR between __DIR__ and the path
+        $this->loadRoutesFrom(__DIR__.'/../routes/web.php');          // ← Add slash here
+        $this->loadMigrationsFrom(__DIR__.'/../database/migrations'); // ← And here
+        $this->loadViewsFrom(__DIR__.'/../resources/views', 'todo');  // ← And here
     }
 }
