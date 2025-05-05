@@ -1,7 +1,7 @@
 <?php
 
 namespace Sait\Todo\Http\Controllers;
-
+use Illuminate\Routing\Controller; // Add this line
 use Sait\Todo\Models\Todo;
 use Illuminate\Http\Request;
 
