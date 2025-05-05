@@ -1,0 +1,22 @@
+{
+    "name": "sait/todo",
+    "description": "A simple Todo package for Laravel",
+    "type": "library",
+    "require": {
+        "php": "^8.1",
+        "laravel/framework": "^10.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Sait\\Todo\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Sait\\Todo\\Providers\\TodoServiceProvider"
+            ]
+        }
+    },
+    "minimum-stability": "dev"
+}
